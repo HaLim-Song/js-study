@@ -1,0 +1,80 @@
+<script>
+  // console.log("안녕");
+  // var는 변수 선언
+  // num1은 변수 이름
+  // =은 오른쪽 데이터를 왼쪽 변수에 입력
+  // ;은 명령 종료
+  // 변수는 데이터를 저장
+  var num1 = 1;
+  // console.log(num1);
+  // 변수의 데이터를 변경할때
+  // num1 = 2;
+  // console.log(num1);
+
+  // 변수의 종류
+  var num2 = 1.2;
+  var str1 = "1";
+  var str2 = "1";
+  var bool1 = true;
+  var bool2 = false;
+  var nu = null;
+  var undef1 = undefined;
+  var undef2;
+
+  // ==은 같다
+  // console.log(num1 == 1); // true
+
+  // 데이터만 비교
+  // console.log(num1 == str1); // true
+
+  // 데이터와 타입 비교
+  // console.log(num1 === str1); //false
+
+  // 1과 true비교 1 == true 0 == false
+  // console.log(num1 == bool1); // true
+  // console.log(num1 === bool1); // false
+  // console.log(nu == undef1); // true
+  // console.log(nu === undef1); // false
+  // console.log(1.3 + 1.2); // 2.5
+
+  // 2진법을 사용하기 때문에 10진법의 소수를 제대로 표현하기 어려움
+  // console.log(0.1 + 1.1); // 1.2000000000000002
+  // 절사 (몇원 단위로 잘라내기)
+  // Decimal
+
+  // c#이나 java 등에서는 1 (int타입)
+  // js에서는 자동으로 변환해서 계산 (number 타입)
+  // 몫 구하기
+  // console.log(parseInt(3 / 2));
+  // 나머지구하기
+  // console.log(3 % 2);
+
+  // console.log(3 >= 2); // true
+  // console.log(!true); // false
+
+  // and 조건
+  // false를 찾거나 끝까지 가면 멈춘다
+  // console.log(true && true); // true
+  // 조건 검색 2번
+  // console.log(true && false); // false
+  // 조건 검색 1번
+  // console.log(false && true); // false
+  // 성능상 false 조건이 자주오는 변수를 앞에 설정
+
+  // or 조건
+  // true를 찾거나 끝까지 가면 멈춘다
+  // 조건 검색 1번
+  // console.log(true || true); // true
+  // 조건 검색 2번
+  // console.log(false || true); // true
+  // 성능상 true 조건이 자주오는 변수를 앞에 설정
+
+  // 자바스크립트에서는 null, 0, undefined등도 false로 사용
+  // 마지막 조건이 true가 아니고 값이면 값을 리턴
+  // console.log(false || null || 0 || undefined || "안녕"); // 안녕
+
+  // 자바스크립트에서는 값이 있으면 true로 인식
+  // if ("안녕") {
+  //     console.log("하세요"); // 하세요
+  // }
+</script>
