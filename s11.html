@@ -32,7 +32,7 @@
     // console.log(str.startsWith("A"));            // true or false 문자열 시작 단어 판별 
     // console.log(str.includes("cd"));             // true or false 문자열에 포함 판별
     // console.log(str.indexOf("c"));               // -1 or 0 문자열에 포함 판별
-    // console.log(str.length);
+    // console.log(str.length);                     // 문자열 길이 
     // console.log(str.padStart(5));                // 문자열 길이 고정
     // console.log(str.repeat("5"));                // 문자열 반복
     // console.log(str.replace("c", ""));           // 문자열 수정
@@ -44,4 +44,68 @@
     // console.log(str.toUpperCase());              // 대문자 변환
     // console.log(str.padStart(10).trim());        // 좌우의 공백 제거
     // console.log("aa  aa".replacceAll(" ", ""));  // 공백 모두 제거
+
+    // 배열 메소드
+    const arr = ["A", "B", "c", "d"];
+    
+    // console.log(arr.concat("e", "f"));
+    // console.log(arr.concat(["g"]));
+    // console.log(arr.copyWithin(0, 1, 3));        // 
+    // console.log(arr.fill("a"));                  // ("a", b, c) a를 b자리에서 c까지 넣는다
+    // console.log([[1,2],[3,4]].flat());           // 
+    // console.log(arr.pop());                      // 배열의 맨 뒤에 있는 것을 빼서 호출
+    // console.log(arr.push("e"));                  // (n)이 몇 번째 인지 호출
+    // console.log(arr.shift());                    // 배열의 맨 앞에 있는 것을 빼서 호출
+    // console.log(arr.splice(1,1));                // (a, b) a번째 배열부터 b만큼 빼서 호출
+
+    // const idx = arr.indexOf("d");
+    // console.log(arr.splice(idx, 1));
+    // console.log(arr);
+
+    // 콜백 함수
+    // callback
+
+    // const temp = () => console.log("hi");
+    // const temp1 = () => console.log("bye");
+
+    // const myFunc = (func) => {
+    //     // 작업 완료시 외부 함수를 작동 
+    //     // 외부 함수를 선택하게 함
+    //     func();
+    // }
+
+    // myFunc(() => console.log("hi"));
+    // myFunc(temp1);
+
+    // const checkName = (name, checker) => {
+    //     const result = checker(name);
+    //     console.log(result);
+    // }
+
+    // const tempName = "HL";
+    // const tempChecker = (name) => {
+    //     return name.indexOf("H");
+    // }
+
+    // checkName(tempName, tempChecker);
+
+    // 함수를 매개변수로 받는 배열 메소드
+    // forEach, filler, map, every, find, some, reduce
+
+    // arr.forEach(value => console.log(value));
+
+    // console.log(arr.filter(value => value == "d"));
+
+    // 객체 map과 array 메소드 map은 전혀 관련 없다.
+    // 기존 데이터를 변경하거나 타입을 바꿔서 배열을 리턴한다.
+
+    const callback = (value) => {
+        // return value.repeat(3);
+        // return [e];
+        return arr.indexOf(e);
+    }
+
+    const result = arr.map(callback);
+    console.log(result);
+
 </script>
